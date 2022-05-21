@@ -10,7 +10,7 @@ const Register = () => {
     <Paper p={50}>
     <Center>
     <Title order={1}>Register</Title>
-    <Image src="/login.svg" width={300} />
+    <Image src="./login.svg" width={300} />
     </Center>
     <Container>
     <TextInput
