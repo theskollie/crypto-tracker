@@ -39,7 +39,6 @@ export default function AppShellContainer() {
   const [active, setActive] = useState('Home');
 
   return (
-    <BrowserRouter>
     <Paper>
     <AppShell
       styles={{
@@ -105,6 +104,5 @@ export default function AppShellContainer() {
       </Routes>
     </AppShell>
     </Paper>
-    </BrowserRouter>
   );
 }
