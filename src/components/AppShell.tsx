@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import {
   AppShell,
   Navbar,
@@ -37,9 +37,7 @@ export default function AppShellContainer() {
   const dark = colorScheme === 'dark';
 
   const [active, setActive] = useState('Home');
-
   return (
-    <BrowserRouter>
     <Paper>
     <AppShell
       styles={{
@@ -48,7 +46,6 @@ export default function AppShellContainer() {
         },
       }}
       navbarOffsetBreakpoint="sm"
-      asideOffsetBreakpoint="sm"
       fixed
       navbar={
         <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
@@ -105,6 +102,5 @@ export default function AppShellContainer() {
       </Routes>
     </AppShell>
     </Paper>
-    </BrowserRouter>
   );
 }
