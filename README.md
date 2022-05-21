@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Crypto Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+With the cryptocurrency market being so large, it can be tough to stay up to date with all the latest projects.
 
-## Available Scripts
+## [Live Demo](https://theskollie.github.io/puff-reducer/) <br/>
 
-In the project directory, you can run:
+## Use Case
 
-### `npm start`
+This projects goal is to find and display the most up-to-date trending crypto coins and get access to their pricing and data. All the largest market cap coins are tracked, showing the latest market price for each.  
+Users can also make queries to get the latest market price on any cryptocurrency that is listed on an exchange.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Stack Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project is built with TypeScript, React, React Router, Axios, Mantine UI and hosted on GitHub pages.
 
-### `npm test`
+## **Local Build**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start Server on Port 3000
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ` npm clone https://github.com/theskollie/crypto-tracker.git`
+- `cd crypto-tracker`
+- `npm install`
+- `npm start`
