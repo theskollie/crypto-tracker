@@ -94,7 +94,14 @@ export const Prices = () => {
     <Image
         radius="md"
         src="./prices.svg"
-        width={300}
+        sx={{
+          [`@media (max-width: 400px)`]: {
+            width: 150
+          },
+          [`@media (min-width: 1000px)`]: {
+            width: 300
+          }
+        }}
         ml={30}
         mt={10}
       />

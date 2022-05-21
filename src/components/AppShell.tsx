@@ -52,7 +52,7 @@ export default function AppShellContainer() {
       fixed
       navbar={
         <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
-          <Sidebar active={active} setActive={setActive} />
+          <Sidebar active={active} setActive={setActive} setOpened={setOpened} />
         </Navbar>
       }
       footer={
