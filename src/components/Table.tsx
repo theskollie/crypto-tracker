@@ -75,12 +75,14 @@ const [trending, setTrending] = useState<SearchTrendingResult['coins'] | null>(n
       <Center>
       <Table striped sx={{ 
         [`@media (max-width: 400px)`]: {
-          minWidth: 100
+          maxWidth: 300,
+          verticalSpacing:"md",
         },
         [`@media (min-width: 1000px)`]: {
-          minWidth: 1000
+          minWidth: 1000,
+          verticalSpacing: "lg"
         }
-      }} verticalSpacing="lg">
+      }} >
         <thead>
           <tr>
             <th>Coin Name</th>
