@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Paper, Image, Center } from '@mantine/core';
+import { Table, Paper, Image, Center, Container } from '@mantine/core';
 
 
 interface SearchTrendingResult {
@@ -62,10 +62,25 @@ const [trending, setTrending] = useState<SearchTrendingResult['coins'] | null>(n
       <Image
         radius="md"
         src="./trending.svg"
-        width={300}
+        sx={{
+          [`@media (max-width: 400px)`]: {
+            width: 300
+          },
+          [`@media (min-width: 1000px)`]: {
+            width: 300
+          }
+        }}
       />
       </Center>
-      <Table striped sx={{ minWidth: 1000 }} verticalSpacing="lg">
+      <Center>
+      <Table striped sx={{ 
+        [`@media (max-width: 400px)`]: {
+          minWidth: 100
+        },
+        [`@media (min-width: 1000px)`]: {
+          minWidth: 1000
+        }
+      }} verticalSpacing="lg">
         <thead>
           <tr>
             <th>Coin Name</th>
@@ -75,6 +90,7 @@ const [trending, setTrending] = useState<SearchTrendingResult['coins'] | null>(n
         </thead>
         {<tbody>{rows}</tbody>}
       </Table>
+      </Center>
     </Paper>
     </div>
   );

@@ -83,9 +83,10 @@ import {
   interface Props {
     active: string;
     setActive: React.Dispatch<React.SetStateAction<string>>;
+    setOpened: React.Dispatch<React.SetStateAction<boolean>>
   }
 
-const Sidebar = ({active, setActive} : Props) => {
+const Sidebar = ({active, setActive, setOpened} : Props) => {
     const { classes, cx } = useStyles();
     const [openSettings, setOpenSettings] = useState(false);
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -118,6 +119,7 @@ const Sidebar = ({active, setActive} : Props) => {
           key={item.label}
           onClick={(event) => {
             setActive(item.label);
+            setOpened(false);
           }}
         >
           <item.icon className={classes.linkIcon} />
