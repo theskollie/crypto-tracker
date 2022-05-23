@@ -2,7 +2,7 @@
 
 With the cryptocurrency market being so large, it can be tough to stay up to date with all the latest projects.
 
-## [Live Demo](https://theskollie.github.io/puff-reducer/) <br/>
+## [Live Demo](https://theskollie.github.io/crypto-tracker/) <br/>
 
 ## Use Case
 
